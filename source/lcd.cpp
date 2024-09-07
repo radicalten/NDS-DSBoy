@@ -105,8 +105,8 @@ void lcd_begin()
 	WY = R_WY;
 	//while (TIMER0_DATA < VBLANK_INT) {}
 	TIMER0_CR = 0;
-	ConsolePrint(0,10);
-	ConsolePrint("WAIT: %d           \n", TIMER0_DATA);
+//	ConsolePrint(0,10);
+//	ConsolePrint("WAIT: %d           \n", TIMER0_DATA);
 	TIMER0_DATA = 0;
 	// 33 ticks per milisecond
 	TIMER0_CR = TIMER_DIV_1024;
